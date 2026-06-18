@@ -5,24 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundial Cibernético de Fútbol - Curso de Verano</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Fuente moderna desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Sección de Intriga / Hero -->
     <header class="hero-section">
         <div class="container">
             <h1 class="main-title">NOS PILLASTE</h1>
-            <p class="subtitle">no somos una estampita original del mundial</p>
+            <p class="subtitle">no somos una estampita original del mundial...</p>
+            <p class="reveal-text">¡Somos <span>IgniVox</span> y tenemos algo preparado para ti!</p>
         </div>
     </header>
 
+    <!-- Contenedor del Logo (Ubicado justo en la transición del cambio de color) -->
+    <div class="logo-divider-container">
+        <!-- Reemplaza "logo-ignivox.png" por el nombre real de tu archivo de imagen -->
+        <img src="logo-ignivox.png" alt="Logo de IgniVox Labs" class="ignivox-logo-mid">
+    </div>
+
+    <!-- Sección de Información del Taller -->
     <section class="info-section">
         <div class="container card">
             <h2>Si quieres que tu hijo o hija adquiera habilidades de robótica y programación, este curso es para ti.</h2>
             
             <div class="course-details">
                 <h3>¡Bienvenidos al <span>Mundial Cibernético de Fútbol</span>!</h3>
-                <p>En este taller único, los alumnos se adentrarán en el emocionante mundo de la tecnología. Aprenderán fundamentos reales de <strong>robótica y programación</strong> mientras construyen su propio proyecto: ¡un robot futbolista (RoboFut)!</p>
+                <p>En este taller único organizado por <strong>IgniVox</strong>, los alumnos se adentrarán en el emocionante mundo de la tecnología. Aprenderán fundamentos reales de <strong>robótica y programación</strong> mientras construyen su propio proyecto: ¡un robot futbolista (RoboFut)!</p>
                 
                 <p>Para cerrar con broche de oro, organizaremos un gran <strong>torneo de fútbol de robots</strong> entre todos los participantes. ¡Habrá grandes emociones y premios para distintas categorías!</p>
                 
@@ -37,14 +47,16 @@
         </div>
     </section>
 
+    <!-- Sección del Formulario -->
     <section id="preinscripcion" class="form-section">
         <div class="container card form-card">
             <h2>Formulario de Preinscripción</h2>
-            <p>Completa los datos para asegurar el lugar de tu hijo/a en el curso.</p>
+            <p>Completa los datos para asegurar el lugar de tu hijo/a en el torneo.</p>
             
+            <!-- Nota profesional sobre costos y sede para planeación logística -->
             <div class="form-notice">
                 <p><strong>📢 Nota importante sobre el cupo y costos:</strong></p>
-                <p>Esta fase de preinscripción es <strong>100% gratuita</strong> y tiene como objetivo dimensionar el grupo para seleccionar la sede óptima que garantice la comodidad y seguridad de los alumnos. El costo final del curso se definirá y notificará próximamente, buscando siempre ofrecer la tarifa más accesible en función del espacio seleccionado. ¡Asegura el lugar de tu hijo/a hoy mismo sin compromiso!</p>
+                <p>Esta fase de preinscripción es <strong>100% gratuita</strong> y tiene como objetivo dimensionar el grupo para seleccionar la sede óptima que garantice la comodidad y seguridad de los alumnos. El costo final del taller se definirá y notificará próximamente, buscando siempre ofrecer la tarifa más accesible en función del espacio seleccionado. ¡Asegura el lugar de tu hijo/a hoy mismo sin compromiso!</p>
             </div>
             
             <form id="registrationForm">
@@ -73,6 +85,19 @@
             <div id="formResponse" class="form-response"></div>
         </div>
     </section>
+
+    <!-- Barra de Redes Sociales (Footer) -->
+    <footer class="social-footer">
+        <div class="container">
+            <p>Sigue de cerca los proyectos de <strong>IgniVox Labs</strong>:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ignivoxlabs" target="_blank" class="social-item instagram">📸 Instagram: @ignivoxlabs</a>
+                <a href="https://www.facebook.com/IgniVoxLabs" target="_blank" class="social-item facebook">👥 Facebook: IgniVox</a>
+                <a href="https://www.tiktok.com/@ignivoxlabs" target="_blank" class="social-item tiktok">🎵 TikTok: @ignivoxlabs</a>
+                <a href="https://www.youtube.com/@IgniVoxLabs" target="_blank" class="social-item youtube">📺 YouTube: IgniVoxLabs</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>

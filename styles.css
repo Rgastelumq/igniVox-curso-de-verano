@@ -1,4 +1,4 @@
-/* Variables de paleta de colores verdes (Temática Deportiva/Robótica) */
+/* Variables de paleta de colores verdes */
 :root {
     --green-dark: #1b4332;
     --green-medium: #2d6a4f;
@@ -13,6 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -43,7 +47,7 @@ body {
     background: linear-gradient(135deg, var(--green-dark), var(--green-medium));
     color: var(--white);
     text-align: center;
-    padding: 80px 0;
+    padding: 90px 0 110px 0; /* Espacio extra abajo para que el logo flote bien */
     border-bottom: 5px solid var(--green-bright);
 }
 
@@ -57,15 +61,52 @@ body {
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--green-light);
     font-style: italic;
+    margin-bottom: 15px;
+}
+
+.reveal-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.reveal-text span {
+    color: var(--green-bright);
+    font-weight: 800;
+    background-color: rgba(82, 183, 136, 0.15);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el Logo Intermedio */
+.logo-divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -65px; /* Sube la imagen para que quede exactamente a la mitad de la división */
+    z-index: 10;
+    margin-bottom: 30px;
+}
+
+.ignivox-logo-mid {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%; /* Hace que el fondo de la imagen sea un círculo perfecto */
+    border: 5px solid var(--green-bright);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 /* Sección de Información */
 .info-section {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .info-section h2 {
@@ -131,7 +172,7 @@ body {
 
 /* Sección Formulario */
 .form-section {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .form-card h2 {
@@ -220,9 +261,55 @@ body {
     color: #d90429;
 }
 
+/* Footer de Redes Sociales */
+.social-footer {
+    background-color: var(--green-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 4px solid var(--green-bright);
+}
+
+.social-footer p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-item {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-item:hover {
+    transform: scale(1.05);
+}
+
+.social-item.instagram:hover { background-color: #e1306c; }
+.social-item.facebook:hover { background-color: #1877f2; }
+.social-item.tiktok:hover { background-color: #000000; }
+.social-item.youtube:hover { background-color: #ff0000; }
+
 /* Responsivo para celulares */
 @media (max-width: 600px) {
-    .main-title { font-size: 2.5rem; }
+    .main-title { font-size: 2.3rem; }
     .subtitle { font-size: 1.1rem; }
+    .reveal-text { font-size: 1.2rem; }
+    .ignivox-logo-mid { width: 100px; height: 100px; margin-top: -50px; }
     .card { padding: 20px; }
+    .social-links { flex-direction: column; align-items: center; }
+    .social-item { width: 80%; }
 }
