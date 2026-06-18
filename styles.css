@@ -1,0 +1,228 @@
+/* Variables de paleta de colores verdes (Temática Deportiva/Robótica) */
+:root {
+    --green-dark: #1b4332;
+    --green-medium: #2d6a4f;
+    --green-bright: #52b788;
+    --green-light: #d8f3dc;
+    --green-accent: #74c69d;
+    --text-dark: #081c15;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--green-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Tarjetas comunes */
+.card {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(27, 67, 50, 0.15);
+    margin-bottom: 40px;
+}
+
+/* Sección de Intriga (Hero) */
+.hero-section {
+    background: linear-gradient(135deg, var(--green-dark), var(--green-medium));
+    color: var(--white);
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: 5px solid var(--green-bright);
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px var(--green-dark), 5px 5px 0px var(--green-bright);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--green-light);
+    font-style: italic;
+}
+
+/* Sección de Información */
+.info-section {
+    padding-top: 40px;
+}
+
+.info-section h2 {
+    color: var(--green-dark);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--green-light);
+    padding-bottom: 15px;
+}
+
+.course-details h3 {
+    font-size: 1.8rem;
+    color: var(--green-medium);
+    margin-bottom: 15px;
+}
+
+.course-details h3 span {
+    color: var(--green-bright);
+    font-weight: 800;
+}
+
+.course-details p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.awards-list {
+    list-style: none;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.awards-list li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--green-dark);
+}
+
+/* Botón Principal */
+.btn-main {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background-color: var(--green-bright);
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(82, 183, 136, 0.4);
+    text-align: center;
+}
+
+.btn-main:hover {
+    background-color: var(--green-medium);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(45, 106, 79, 0.4);
+}
+
+/* Sección Formulario */
+.form-section {
+    padding-bottom: 60px;
+}
+
+.form-card h2 {
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.form-card p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Cuadro de aviso profesional sobre costos/logística */
+.form-notice {
+    background-color: #f4fbf7;
+    border-left: 5px solid var(--green-medium);
+    padding: 20px;
+    border-radius: 4px 12px 12px 4px;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+.form-notice strong {
+    color: var(--green-dark);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--green-accent);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--green-dark);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--green-medium);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--green-dark);
+}
+
+/* Respuesta de envío */
+.form-response {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-response.success {
+    color: var(--green-medium);
+}
+
+.form-response.error {
+    color: #d90429;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .main-title { font-size: 2.5rem; }
+    .subtitle { font-size: 1.1rem; }
+    .card { padding: 20px; }
+}

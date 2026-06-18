@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial Cibernético de Fútbol - Curso de Verano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="main-title">NOS PILLASTE</h1>
+            <p class="subtitle">no somos una estampita original del mundial</p>
+        </div>
+    </header>
+
+    <section class="info-section">
+        <div class="container card">
+            <h2>Si quieres que tu hijo o hija adquiera habilidades de robótica y programación, este curso es para ti.</h2>
+            
+            <div class="course-details">
+                <h3>¡Bienvenidos al <span>Mundial Cibernético de Fútbol</span>!</h3>
+                <p>En este taller único, los alumnos se adentrarán en el emocionante mundo de la tecnología. Aprenderán fundamentos reales de <strong>robótica y programación</strong> mientras construyen su propio proyecto: ¡un robot futbolista (RoboFut)!</p>
+                
+                <p>Para cerrar con broche de oro, organizaremos un gran <strong>torneo de fútbol de robots</strong> entre todos los participantes. ¡Habrá grandes emociones y premios para distintas categorías!</p>
+                
+                <ul class="awards-list">
+                    <li>🏆 Ganador del Torneo</li>
+                    <li>⚽ Mayor Goleador</li>
+                    <li>🎨 Mejor Diseño de Robot</li>
+                </ul>
+            </div>
+            
+            <a href="#preinscripcion" class="btn-main">Preinscribirme</a>
+        </div>
+    </section>
+
+    <section id="preinscripcion" class="form-section">
+        <div class="container card form-card">
+            <h2>Formulario de Preinscripción</h2>
+            <p>Completa los datos para asegurar el lugar de tu hijo/a en el curso.</p>
+            
+            <div class="form-notice">
+                <p><strong>📢 Nota importante sobre el cupo y costos:</strong></p>
+                <p>Esta fase de preinscripción es <strong>100% gratuita</strong> y tiene como objetivo dimensionar el grupo para seleccionar la sede óptima que garantice la comodidad y seguridad de los alumnos. El costo final del curso se definirá y notificará próximamente, buscando siempre ofrecer la tarifa más accesible en función del espacio seleccionado. ¡Asegura el lugar de tu hijo/a hoy mismo sin compromiso!</p>
+            </div>
+            
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="studentName">Nombre completo del alumno:</label>
+                    <input type="text" id="studentName" name="studentName" required placeholder="Ej. Juan Pérez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" required min="5" max="18" placeholder="Ej. 12">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tutorPhone">Número del tutor:</label>
+                    <input type="tel" id="tutorPhone" name="tutorPhone" required placeholder="Ej. 6861234567">
+                </div>
+                
+                <div class="form-group">
+                    <label for="schoolEmail">Correo institucional:</label>
+                    <input type="email" id="schoolEmail" name="schoolEmail" required placeholder="usuario@edubc.mx">
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Registro Gratuito</button>
+            </form>
+            <div id="formResponse" class="form-response"></div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
